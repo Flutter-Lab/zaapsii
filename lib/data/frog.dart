@@ -124,6 +124,120 @@ final Mosquito = [
   ),
 ];
 
+final Snow = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_snow_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_snow_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_snow_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_snow_4.png',
+  ),
+];
+
+final Apple = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_apple_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_apple_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_apple_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_apple_4.png',
+  ),
+];
+
+final Fishingboy = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_fishingboy_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_fishingboy_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_fishingboy_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_fishingboy_4.png',
+  ),
+];
+
+final Football = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_football_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_football_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_football_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_football_4.png',
+  ),
+];
+
+final Rainyday = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_rainyday_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_rainyday_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_rainyday_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_rainyday_4.png',
+  ),
+];
+
+final Waterlily = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_waterlily_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_waterlily_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_waterlily_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_waterlily_4.png',
+  ),
+];
+
 
 
 

@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onTap: (){
                 Get.toNamed(AppRoutes.SETTINGSCREEN);
               },
-              child: Icon(Icons.settings, size: 35,),
+              child: const Icon(Icons.settings, size: 35,),
             ),
           ),
           Column(
@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Elephant);
+                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Snow);
                         },
                         child: Container(
                           height: 80,
@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(100),
                             child: const Image(
-                              image: AssetImage("assets/images/h1.png"),
+                              image: AssetImage("assets/images/sequence_snow_icon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       const SizedBox(height: 10),
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Dogs);
+                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Apple);
                         },
                         child: Container(
                           height: 80,
@@ -78,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(100),
                             child: const Image(
-                              image: AssetImage("assets/images/h2.png"),
+                              image: AssetImage("assets/images/sequence_apple_icon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -91,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Fish);
+                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Fishingboy);
                         },
                         child: Container(
                           height: 80,
@@ -102,7 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(100),
                             child: const Image(
-                              image: AssetImage("assets/images/h3.png"),
+                              image: AssetImage("assets/images/sequence_fishingboy_icon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       const SizedBox(height: 10),
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Lion);
+                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Football);
                         },
                         child: Container(
                           height: 80,
@@ -122,7 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(100),
                             child: const Image(
-                              image: AssetImage("assets/images/h4.png"),
+                              image: AssetImage("assets/images/sequence_football_icon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -135,7 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Mosquito);
+                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Rainyday);
                         },
                         child: Container(
                           height: 80,
@@ -146,7 +146,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(100),
                             child: const Image(
-                              image: AssetImage("assets/images/h5.png"),
+                              image: AssetImage("assets/images/sequence_rainyday_icon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -179,13 +179,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 child: Container(
                   height: 50,
-                  width: 170,
+                  width: 220,
                   decoration: BoxDecoration(
                     color: Colors.lightGreenAccent,
                     border: Border.all(color: Colors.black, width: 1),
                     borderRadius: BorderRadius.circular(100),
                   ),
-                  child: const Center(child: Text("Select an Animal", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),)),
+                  child: const Center(child: Text("Select a sequence card", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),)),
                 ),
               ),
             ],

@@ -415,7 +415,7 @@ class _GameScreenState extends State<GameScreen> {
           10,
         ],
         child: Container(
-          height: 135,
+          height: 133,
           width: 100,
           color: Colors.white,
           child: DragTarget<Animal>(

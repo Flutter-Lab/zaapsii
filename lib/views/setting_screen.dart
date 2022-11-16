@@ -28,15 +28,15 @@ class _SettingScreenState extends State<SettingScreen> {
             ),
           ),
           Positioned(
+            top: 20,
+            left: 30,
             child: IconButton(
               onPressed: () {
                 Get.back();
               },
-              icon: Icon(Icons.arrow_back),
+              icon: const Icon(Icons.arrow_back),
               color: Colors.black54,
             ),
-            top: 20,
-            left: 30,
           ),
           Column(
             children: [
