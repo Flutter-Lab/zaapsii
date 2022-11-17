@@ -474,25 +474,25 @@ class _MoreScreenState extends State<MoreScreen> {
               const SizedBox(
                 height: 20,
               ),
-              InkWell(
-                onTap: () {
-                  push(context: context, widget: const InAppPurchaseScreen());
-                },
-                child: Container(
-                  height: 35,
-                  width: 160,
-                  decoration: BoxDecoration(
-                    color: Colors.lightGreenAccent,
-                    border: Border.all(color: Colors.black, width: 1),
-                    borderRadius: BorderRadius.circular(100),
-                  ),
-                  child: const Center(
-                      child: Text(
-                    "Unlock All Levels",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
-                  )),
-                ),
-              ),
+              // InkWell(
+              //   onTap: () {
+              //     // push(context: context, widget: const InAppPurchaseScreen());
+              //   },
+              //   child: Container(
+              //     height: 35,
+              //     width: 160,
+              //     decoration: BoxDecoration(
+              //       color: Colors.lightGreenAccent,
+              //       border: Border.all(color: Colors.black, width: 1),
+              //       borderRadius: BorderRadius.circular(100),
+              //     ),
+              //     child: const Center(
+              //         child: Text(
+              //       "Unlock All Levels",
+              //       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+              //     )),
+              //   ),
+              // ),
               const SizedBox(
                 height: 10,
               ),
