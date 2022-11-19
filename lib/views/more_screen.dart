@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:zapps/data/frog.dart';
 
 import '../AppRoutes.dart';
 import 'main_game_screen.dart';
@@ -17,6 +18,15 @@ class _MoreScreenState extends State<MoreScreen> {
     'assets/images/sequence_apple_icon.png',
     'assets/images/sequence_football_icon.png',
     'assets/images/sequence_waterlily_icon.png',
+    'assets/images/sequence_watermelon_icon.png',
+    'assets/images/sequence_dolphin_icon.png',
+    'assets/images/sequence_season_icon.png',
+    'assets/images/sequence_santa_icon.png',
+    'assets/images/sequence_spacemission_icon.png',
+    'assets/images/sequence_lifestage_icon.png',
+    'assets/images/sequence_omlet_icon.png',
+    'assets/images/sequence_brushing_icon.png',
+    'assets/images/sequence_bearfishing_icon.png',
   ];
 
   @override
@@ -28,6 +38,7 @@ class _MoreScreenState extends State<MoreScreen> {
             quarterTurns: 1,
             child: Image.asset(
               "assets/images/mbg.png",
+              opacity: const AlwaysStoppedAnimation(.8),
               fit: BoxFit.cover,
               height: double.infinity,
               width: double.infinity,
@@ -460,16 +471,30 @@ class _MoreScreenState extends State<MoreScreen> {
                         itemCount: 24,
                         itemBuilder: (context, index) {
                           return Container(
-                            padding: const EdgeInsets.all(15),
-                            height: 50,
-                            width: 50,
+                            margin: const EdgeInsets.all(10),
+                            height: 100,
+                            width: 100,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(100),
+                              border: Border.all(
+                                color: Colors.green,
+                              ),
+                              borderRadius: BorderRadius.circular(50),
                             ),
                             child: ClipRRect(
-                              borderRadius: BorderRadius.circular(100),
+                              borderRadius: BorderRadius.circular(50),
                               child: InkWell(
-                                onTap: () => print(sequence_icons[index]),
+                                onTap: () {
+                                  if (index < sequence_icons.length) {
+                                    print(sequence_icons[index]);
+
+                                    Get.toNamed(AppRoutes.GAMESCREEN,
+                                        arguments: gameArgument(
+                                            sequence_icons[index]));
+                                  } else {
+                                    Get.toNamed(AppRoutes.GAMESCREEN,
+                                        arguments: Dolphin);
+                                  }
+                                },
                                 // print('Click= $index'),
                                 child: Image(
                                   image: index < sequence_icons.length
@@ -485,7 +510,7 @@ class _MoreScreenState extends State<MoreScreen> {
                         })),
               ),
               const SizedBox(
-                height: 20,
+                height: 10,
               ),
               // InkWell(
               //   onTap: () {
@@ -514,5 +539,106 @@ class _MoreScreenState extends State<MoreScreen> {
         ],
       ),
     );
+  }
+}
+
+// 'assets/images/sequence_snow_icon.png'
+// 'assets/images/sequence_fishingboy_icon.png'
+// 'assets/images/sequence_rainyday_icon.png'
+
+// 'assets/images/sequence_apple_icon.png'
+// 'assets/images/sequence_football_icon.png'
+// 'assets/images/sequence_waterlily_icon.png'
+// 'assets/images/sequence_watermelon_icon.png'
+// 'assets/images/sequence_dolphin_icon.png'
+// 'assets/images/sequence_season_icon.png'
+// 'assets/images/sequence_santa_icon.png'
+// 'assets/images/sequence_spacemission_icon.png'
+// 'assets/images/sequence_lifestage_icon.png'
+// 'assets/images/sequence_omlet_icon.png'
+// 'assets/images/sequence_brushing_icon.png'
+// 'assets/images/sequence_bearfishing_icon.png'
+
+gameArgument(String sequence_icon) {
+  if (sequence_icon.isNotEmpty) {
+    switch (sequence_icon) {
+      case 'assets/images/sequence_snow_icon.png':
+        {
+          return Snow;
+        }
+      case 'assets/images/sequence_fishingboy_icon.png':
+        {
+          return Fishingboy;
+        }
+      case 'assets/images/sequence_rainyday_icon.png':
+        {
+          return Rainyday;
+        }
+
+      case 'assets/images/sequence_apple_icon.png':
+        {
+          return Apple;
+        }
+
+      case 'assets/images/sequence_football_icon.png':
+        {
+          return Football;
+        }
+
+      case 'assets/images/sequence_waterlily_icon.png':
+        {
+          return Waterlily;
+        }
+
+      case 'assets/images/sequence_watermelon_icon.png':
+        {
+          return Watermelon;
+        }
+
+      case 'assets/images/sequence_dolphin_icon.png':
+        {
+          return Dolphin;
+        }
+
+      case 'assets/images/sequence_season_icon.png':
+        {
+          return Seasons;
+        }
+
+      case 'assets/images/sequence_santa_icon.png':
+        {
+          return Santa;
+        }
+
+      case 'assets/images/sequence_spacemission_icon.png':
+        {
+          return SpaceMission;
+        }
+
+      case 'assets/images/sequence_lifestage_icon.png':
+        {
+          return LifeStage;
+        }
+
+      case 'assets/images/sequence_omlet_icon.png':
+        {
+          return Omlet;
+        }
+
+      case 'assets/images/sequence_brushing_icon.png':
+        {
+          return Brushing;
+        }
+
+      case 'assets/images/sequence_bearfishing_icon.png':
+        {
+          return BearFishing;
+        }
+
+      default:
+        {
+          return Dolphin;
+        }
+    }
   }
 }

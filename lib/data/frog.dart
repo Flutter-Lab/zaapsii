@@ -239,5 +239,178 @@ final Waterlily = [
 ];
 
 
+final Watermelon = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_watermelon_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_watermelon_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_watermelon_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_watermelon_4.png',
+  ),
+];
+
+final Dolphin = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_dolphin_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_dolphin_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_dolphin_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_dolphin_4.png',
+  ),
+];
+
+final Seasons = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_season_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_season_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_season_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_season_4.png',
+  ),
+];
+
+final Santa = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_santa_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_santa_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_santa_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_santa_4.png',
+  ),
+];
+
+final SpaceMission = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_spacemission_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_spacemission_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_spacemission_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_spacemission_4.png',
+  ),
+];
+
+final LifeStage = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_lifestage_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_lifestage_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_lifestage_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_lifestage_4.png',
+  ),
+];
+
+final Omlet = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_omlet_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_omlet_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_omlet_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_omlet_4.png',
+  ),
+];
+
+final Brushing = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_brushing_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_brushing_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_brushing_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_brushing_4.png',
+  ),
+];
+
+final BearFishing = [
+  Animal(
+    type: AnimalType.one,
+    imageUrl: 'assets/images/sequence_bearfishing_1.png',
+  ),
+  Animal(
+    type: AnimalType.two,
+    imageUrl: 'assets/images/sequence_bearfishing_2.png',
+  ),
+  Animal(
+    type: AnimalType.three,
+    imageUrl: 'assets/images/sequence_bearfishing_3.png',
+  ),
+  Animal(
+    type: AnimalType.four,
+    imageUrl: 'assets/images/sequence_bearfishing_4.png',
+  ),
+];
+
+
+
 
 
