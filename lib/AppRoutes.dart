@@ -7,35 +7,35 @@ import 'package:zapps/views/scores_screen.dart';
 import 'package:zapps/views/setting_screen.dart';
 
 class AppRoutes {
-  static const String HOMESCREEN = "/homescreen";
-  static const String MORESCREEN = "/morescreen";
-  static const String GAMESCREEN = "/gamescreen";
-  static const String SETTINGSCREEN = "/settingscreen";
-  static const String SCORESSCREEN = "/scoresscreen";
+  static const String homeSceen= "/homescreen";
+  static const String moreScreen = "/morescreen";
+  static const String gameScreen = "/gamescreen";
+  static const String settingsScreen = "/settingscreen";
+  static const String scoreScreen = "/scoresscreen";
 
   static List<GetPage> routes = [
     GetPage(
-        name: HOMESCREEN,
+        name: homeSceen,
         page: () => HomeScreen(),
         transitionDuration: const Duration(milliseconds: 1000),
         transition: Transition.fade),
     GetPage(
-        name: SCORESSCREEN,
+        name: scoreScreen,
         page: () => const ScoresScreen(),
         transitionDuration: const Duration(milliseconds: 100),
         transition: Transition.cupertino),
     GetPage(
-        name: SETTINGSCREEN,
+        name: settingsScreen,
         page: () => SettingScreen(),
         transitionDuration: const Duration(milliseconds: 100),
         transition: Transition.cupertino),
     GetPage(
-        name: MORESCREEN,
+        name: moreScreen,
         page: () => MoreScreen(),
         transitionDuration: const Duration(milliseconds: 500),
         transition: Transition.downToUp),
     GetPage(
-      name: GAMESCREEN,
+      name: gameScreen,
       page: () => const GameScreen(),
       transitionDuration: const Duration(milliseconds: 1000),
       transition: Transition.circularReveal,

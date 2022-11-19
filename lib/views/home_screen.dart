@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
             right: 30,
             child: InkWell(
               onTap: (){
-                Get.toNamed(AppRoutes.SETTINGSCREEN);
+                Get.toNamed(AppRoutes.settingsScreen);
               },
               child: const Icon(Icons.settings, size: 35,),
             ),
@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Snow);
+                          Get.toNamed(AppRoutes.gameScreen, arguments: Snow);
                         },
                         child: Container(
                           height: 80,
@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       const SizedBox(height: 10),
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Apple);
+                          Get.toNamed(AppRoutes.gameScreen, arguments: Apple);
                         },
                         child: Container(
                           height: 80,
@@ -91,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Fishingboy);
+                          Get.toNamed(AppRoutes.gameScreen, arguments: Fishingboy);
                         },
                         child: Container(
                           height: 80,
@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       const SizedBox(height: 10),
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Football);
+                          Get.toNamed(AppRoutes.gameScreen, arguments: Football);
                         },
                         child: Container(
                           height: 80,
@@ -135,7 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.GAMESCREEN, arguments: Rainyday);
+                          Get.toNamed(AppRoutes.gameScreen, arguments: Rainyday);
                         },
                         child: Container(
                           height: 80,
@@ -155,7 +155,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       const SizedBox(height: 10),
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.MORESCREEN);
+                          Get.toNamed(AppRoutes.moreScreen);
                         },
                         child: Container(
                           height: 80,

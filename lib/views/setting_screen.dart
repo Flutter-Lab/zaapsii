@@ -67,7 +67,7 @@ class _SettingScreenState extends State<SettingScreen> {
                       const SizedBox(height: 10),
                       InkWell(
                         onTap: () {
-                          Get.toNamed(AppRoutes.SCORESSCREEN);
+                          Get.toNamed(AppRoutes.scoreScreen);
                         },
                         child: const Image(
                           image: AssetImage("assets/icons/score.png"),
@@ -160,7 +160,7 @@ class _SettingScreenState extends State<SettingScreen> {
                       ),
                       InkWell(
                           onTap: () {
-                            Get.toNamed(AppRoutes.SCORESSCREEN);
+                            Get.toNamed(AppRoutes.scoreScreen);
                           },
                           child: const Text(
                             "High Score",
