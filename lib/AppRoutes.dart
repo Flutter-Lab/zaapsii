@@ -1,4 +1,3 @@
-
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:zapps/views/home_screen.dart';
@@ -18,8 +17,8 @@ class AppRoutes {
     GetPage(
         name: HOMESCREEN,
         page: () => HomeScreen(),
-        transitionDuration: Duration(milliseconds: 100),
-        transition: Transition.cupertino),
+        transitionDuration: const Duration(milliseconds: 1000),
+        transition: Transition.fade),
     GetPage(
         name: SCORESSCREEN,
         page: () => const ScoresScreen(),
@@ -28,17 +27,19 @@ class AppRoutes {
     GetPage(
         name: SETTINGSCREEN,
         page: () => SettingScreen(),
-        transitionDuration: Duration(milliseconds: 100),
+        transitionDuration: const Duration(milliseconds: 100),
         transition: Transition.cupertino),
     GetPage(
         name: MORESCREEN,
         page: () => MoreScreen(),
-        transitionDuration: Duration(milliseconds: 100),
-        transition: Transition.cupertino),
+        transitionDuration: const Duration(milliseconds: 500),
+        transition: Transition.downToUp),
     GetPage(
-        name: GAMESCREEN,
-        page: () => GameScreen(),
-        transitionDuration: Duration(milliseconds: 100),
-        transition: Transition.cupertino),
+      name: GAMESCREEN,
+      page: () => const GameScreen(),
+      transitionDuration: const Duration(milliseconds: 1000),
+      transition: Transition.circularReveal,
+
+    ),
   ];
 }

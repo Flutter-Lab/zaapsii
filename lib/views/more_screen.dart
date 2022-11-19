@@ -487,9 +487,12 @@ class _MoreScreenState extends State<MoreScreen> {
                                   if (index < sequence_icons.length) {
                                     print(sequence_icons[index]);
 
-                                    Get.toNamed(AppRoutes.GAMESCREEN,
-                                        arguments: gameArgument(
-                                            sequence_icons[index]));
+                                    Get.toNamed(
+                                    
+                                      AppRoutes.GAMESCREEN,
+                                      arguments:
+                                          gameArgument(sequence_icons[index]),
+                                    );
                                   } else {
                                     Get.toNamed(AppRoutes.GAMESCREEN,
                                         arguments: Dolphin);
