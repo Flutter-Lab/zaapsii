@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:zapps/components/navigate.dart';
-import 'package:zapps/views/in_app_purchase.dart';
 
 import '../AppRoutes.dart';
 import 'main_game_screen.dart';
@@ -13,6 +10,15 @@ class MoreScreen extends StatefulWidget {
 }
 
 class _MoreScreenState extends State<MoreScreen> {
+  final List<String> sequence_icons = [
+    'assets/images/sequence_snow_icon.png',
+    'assets/images/sequence_fishingboy_icon.png',
+    'assets/images/sequence_rainyday_icon.png',
+    'assets/images/sequence_apple_icon.png',
+    'assets/images/sequence_football_icon.png',
+    'assets/images/sequence_waterlily_icon.png',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,19 +35,19 @@ class _MoreScreenState extends State<MoreScreen> {
             ),
           ),
           Positioned(
+            left: 15,
+            top: 10,
             child: IconButton(
               onPressed: () {
                 Get.back();
               },
-              icon: Icon(Icons.arrow_back_ios),
+              icon: const Icon(Icons.arrow_back_ios),
               color: Colors.black,
             ),
-            left: 15,
-            top: 10,
           ),
           Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               // Row(
@@ -462,10 +468,17 @@ class _MoreScreenState extends State<MoreScreen> {
                             ),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(100),
-                              child: const Image(
-                                image: AssetImage("assets/images/lock.png"),
-                                height: 50,
-                                width: 50,
+                              child: InkWell(
+                                onTap: () => print(sequence_icons[index]),
+                                // print('Click= $index'),
+                                child: Image(
+                                  image: index < sequence_icons.length
+                                      ? AssetImage(sequence_icons[index])
+                                      : const AssetImage(
+                                          "assets/images/lock.png"),
+                                  height: 50,
+                                  width: 50,
+                                ),
                               ),
                             ),
                           );

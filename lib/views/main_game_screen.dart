@@ -172,7 +172,7 @@ class _GameScreenState extends State<GameScreen> {
           ),
           Positioned(
             top: 40,
-            right: 30,
+            right: 10,
             child: Text(
               "Score: $score",
               style: const TextStyle(
@@ -183,14 +183,15 @@ class _GameScreenState extends State<GameScreen> {
             ),
           ),
           Positioned(
-            top: 60,
+            top: 40,
             left: 60,
             child: Column(
               children: [
-                SizedBox(
-                  height: 250,
-                  width: 500,
+                Container(
+                  height: 170,
+                  width: 495,
                   child: GridView.builder(
+                    
                       itemCount: all.length,
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
@@ -200,7 +201,9 @@ class _GameScreenState extends State<GameScreen> {
                         var data = [all[index]];
 
                         return Container(
-                          margin: const EdgeInsets.all(10),
+
+                          // color: Colors.blue,
+                          margin: const EdgeInsets.symmetric(horizontal: 9),
                           child: buildTarget(
                             context,
                             text: '',
@@ -287,11 +290,11 @@ class _GameScreenState extends State<GameScreen> {
             ),
           ),
           Positioned(
-            right: 30,
-            bottom: 200,
+            right: 10,
+            bottom: 270,
             child: Container(
               alignment: Alignment.center,
-              width: 130,
+              width: 110,
               height: 45,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -313,14 +316,14 @@ class _GameScreenState extends State<GameScreen> {
             ),
           ),
           Positioned(
-              right: 30,
-              bottom: 130,
+              right: 10,
+              bottom: 200,
               child: GestureDetector(
                 onTap: () {
                   resetTimer();
                 },
                 child: Container(
-                  width: 130,
+                  width: 110,
                   height: 45,
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -408,8 +411,9 @@ class _GameScreenState extends State<GameScreen> {
     required DragTargetAccept<Animal> onAccept,
   }) =>
       DottedBorder(
+        
         color: Colors.green,
-        strokeWidth: 1,
+        strokeWidth: 1.5,
         dashPattern: const [
           10,
           10,
@@ -483,8 +487,9 @@ class DraggableWidget extends StatelessWidget {
         child: Center(
           child: Image.asset(
             animal.imageUrl,
-            height: 150,
+            height: 170,
             width: 130,
+            fit: BoxFit.fill,
           ),
         ),
       );
