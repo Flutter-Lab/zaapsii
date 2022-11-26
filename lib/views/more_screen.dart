@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:zapps/data/frog.dart';
-
 import '../AppRoutes.dart';
-import 'main_game_screen.dart';
 
 class MoreScreen extends StatefulWidget {
+  const MoreScreen({super.key});
+
   @override
   State<MoreScreen> createState() => _MoreScreenState();
 }
@@ -61,404 +61,6 @@ class _MoreScreenState extends State<MoreScreen> {
               const SizedBox(
                 height: 20,
               ),
-              // Row(
-              //   mainAxisAlignment: MainAxisAlignment.center,
-              //   children: [
-              //     Column(
-              //       children: [
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //       ],
-              //     ),
-              //     const SizedBox(
-              //       width: 10,
-              //     ),
-              //     Column(
-              //       children: [
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //       ],
-              //     ),
-              //     const SizedBox(
-              //       width: 10,
-              //     ),
-              //     Column(
-              //       children: [
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //       ],
-              //     ),
-              //     const SizedBox(
-              //       width: 10,
-              //     ),
-              //     Column(
-              //       children: [
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //       ],
-              //     ),
-              //     const SizedBox(
-              //       width: 10,
-              //     ),
-              //     Column(
-              //       children: [
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //       ],
-              //     ),
-              //     const SizedBox(
-              //       width: 10,
-              //     ),
-              //     Column(
-              //       children: [
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //         const SizedBox(height: 10),
-              //         Container(
-              //           height: 50,
-              //           width: 50,
-              //           decoration: BoxDecoration(
-              //             borderRadius: BorderRadius.circular(100),
-              //           ),
-              //           child: ClipRRect(
-              //             borderRadius: BorderRadius.circular(100),
-              //             child: const Image(
-              //               image: AssetImage("assets/images/lock.png"),
-              //               fit: BoxFit.cover,
-              //             ),
-              //           ),
-              //         ),
-              //       ],
-              //     ),
-              //   ],
-              // ),
 
               Center(
                 child: SizedBox(
@@ -475,9 +77,12 @@ class _MoreScreenState extends State<MoreScreen> {
                             height: 100,
                             width: 100,
                             decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.green,
-                              ),
+                              boxShadow: const [
+                                BoxShadow(
+                                    color: Colors.black,
+                                    offset: Offset(0, 5),
+                                    blurRadius: 10.0)
+                              ],
                               borderRadius: BorderRadius.circular(50),
                             ),
                             child: ClipRRect(
@@ -488,7 +93,6 @@ class _MoreScreenState extends State<MoreScreen> {
                                     print(sequence_icons[index]);
 
                                     Get.toNamed(
-                                    
                                       AppRoutes.gameScreen,
                                       arguments:
                                           gameArgument(sequence_icons[index]),
@@ -548,7 +152,6 @@ class _MoreScreenState extends State<MoreScreen> {
 // 'assets/images/sequence_snow_icon.png'
 // 'assets/images/sequence_fishingboy_icon.png'
 // 'assets/images/sequence_rainyday_icon.png'
-
 // 'assets/images/sequence_apple_icon.png'
 // 'assets/images/sequence_football_icon.png'
 // 'assets/images/sequence_waterlily_icon.png'
@@ -562,9 +165,9 @@ class _MoreScreenState extends State<MoreScreen> {
 // 'assets/images/sequence_brushing_icon.png'
 // 'assets/images/sequence_bearfishing_icon.png'
 
-gameArgument(String sequence_icon) {
-  if (sequence_icon.isNotEmpty) {
-    switch (sequence_icon) {
+gameArgument(String sequenceIcon) {
+  if (sequenceIcon.isNotEmpty) {
+    switch (sequenceIcon) {
       case 'assets/images/sequence_snow_icon.png':
         {
           return Snow;

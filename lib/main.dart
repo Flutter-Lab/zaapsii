@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:zapps/views/splash_screen.dart';
 
 import 'AppRoutes.dart';
 
@@ -14,7 +15,13 @@ void main() {
   });
 }
 
+
+
 class MyApp extends StatelessWidget {
+
+
+
+
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -23,7 +30,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: AppRoutes.homeSceen,
+      // initialRoute: AppRoutes.homeSceen,
+      home: SplashScreen(),
+      
       getPages: AppRoutes.routes,
       debugShowCheckedModeBanner: false,
     );
