@@ -183,41 +183,42 @@ class _GameScreenState extends State<GameScreen> {
             ),
           ),
           Positioned(
-            top: 40,
-            left: 60,
-            child: Column(
-              children: [
-                Container(
-                  height: 170,
-                  width: 495,
-                  child: GridView.builder(
-                    
-                      itemCount: all.length,
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 4,
-                      ),
-                      itemBuilder: (context, index) {
-                        var data = [all[index]];
+            top: 70,
+            left: 62,
+            child: Container(
+              alignment: Alignment.bottomCenter,
+              padding: EdgeInsets.zero,
+              // color: Colors.amber,
+              height: 150,
+              width: 475,
 
-                        return Container(
+              child: GridView.builder(
+                padding: EdgeInsets.zero,
+                itemCount: all.length,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 4,
+                ),
+                itemBuilder: (context, index) {
+                  var data = [all[index]];
 
-                          // color: Colors.blue,
-                          margin: const EdgeInsets.symmetric(horizontal: 9),
-                          child: buildTarget(
-                            context,
-                            text: '',
-                            animals: data,
-                            acceptTypes: AnimalType.values,
-                            onAccept: (data) => setState(() {
-                              removeAll(data);
-                              all.add(data);
-                            }),
-                          ),
-                        );
+                  return Container(
+                    alignment: Alignment.center,
+                    // color: Colors.blue,
+                    margin:
+                        const EdgeInsets.symmetric(horizontal: 12, vertical: 0),
+                    child: buildTarget(
+                      context,
+                      text: '',
+                      animals: data,
+                      acceptTypes: AnimalType.values,
+                      onAccept: (data) => setState(() {
+                        removeAll(data);
+                        all.add(data);
                       }),
-                )
-              ],
+                    ),
+                  );
+                },
+              ),
             ),
           ),
           Positioned(
@@ -410,58 +411,67 @@ class _GameScreenState extends State<GameScreen> {
     required List<AnimalType> acceptTypes,
     required DragTargetAccept<Animal> onAccept,
   }) =>
-      DottedBorder(
-        
-        color: Colors.green,
-        strokeWidth: 1.5,
-        dashPattern: const [
-          10,
-          10,
-        ],
-        child: Container(
-          height: 133,
-          width: 100,
-          color: Colors.white,
-          child: DragTarget<Animal>(
-            builder: (context, candidateData, rejectedData) => Stack(
-              children: [
-                ...animals
-                    .map(
-                      (animal) => DraggableWidget(animal: animal),
-                    )
-                    .toList(),
-                IgnorePointer(
-                  child: Center(
-                    child: Text(
-                      text,
-                      style: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
+      Container(
+        height: 133,
+        width: 100,
+        child: DragTarget<Animal>(
+          builder: (context, candidateData, rejectedData) => Stack(
+            children: [
+              IgnorePointer(
+                child: Center(
+                  child: SizedBox(
+                    width: double.infinity,
+                    height: double.infinity,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(0, 3),
+                            blurRadius: 7.0,
+                          )
+                        ],
+                      ),
+                      child: Center(
+                        child: Text(
+                          text,
+                          style: const TextStyle(
+                            color: Colors.black,
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ],
-            ),
-            onWillAccept: (data) => true,
-            onAccept: (data) {
-              if (acceptTypes.contains(data.type)) {
-                print('correct');
-                setState(() {
-                  score += 10;
-                  all.removeWhere((animal) => animal.imageUrl == data.imageUrl);
-                });
-              } else {
-                setState(() {
-                  if (score >= 19) score -= 20;
-                });
-
-                print('wrong');
-              }
-              onAccept(data);
-            },
+              ),
+              ...animals
+                  .map(
+                    (animal) => DraggableWidget(animal: animal),
+                  )
+                  .toList(),
+            ],
           ),
+          onWillAccept: (data) => true,
+          onAccept: (data) {
+            if (acceptTypes.contains(data.type)) {
+              print('correct');
+              setState(() {
+                score += 10;
+                all.removeWhere((animal) => animal.imageUrl == data.imageUrl);
+              });
+            } else {
+              setState(() {
+                if (score >= 19) score -= 20;
+              });
+
+              print('wrong');
+            }
+            onAccept(data);
+          },
         ),
       );
 }
@@ -482,14 +492,14 @@ class DraggableWidget extends StatelessWidget {
         child: buildImage(),
       );
 
-  Widget buildImage() => Container(
-        color: Colors.white,
-        child: Center(
+  Widget buildImage() => Center(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10),
           child: Image.asset(
             animal.imageUrl,
             height: 170,
             width: 130,
-            fit: BoxFit.fill,
+            fit: BoxFit.cover,
           ),
         ),
       );

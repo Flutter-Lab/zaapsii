@@ -1,22 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:zapps/data/frog.dart';
-import 'package:zapps/views/splash_screen.dart';
-
 import '../AppRoutes.dart';
-import 'main_game_screen.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
   State<HomeScreen> createState() => _HomeScreenState();
-
-
-  
 }
-
-
 
 class _HomeScreenState extends State<HomeScreen> {
   @override
@@ -98,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: 80,
                           width: 80,
                           decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 143, 241, 98),
+                            color: const Color.fromARGB(255, 143, 241, 98),
                             borderRadius: BorderRadius.circular(100),
                             boxShadow: const [
                               BoxShadow(
