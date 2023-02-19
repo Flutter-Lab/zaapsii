@@ -1,4 +1,4 @@
-# zapps
+# Sequence Match for Kids
 
 A new Flutter project.
 
